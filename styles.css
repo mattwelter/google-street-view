@@ -1,0 +1,103 @@
+* {
+	box-sizing: border-box;
+}
+
+body {
+	margin: 0 auto;
+	display: block;
+}
+
+a, a:visited {
+	text-decoration: none;
+	color: #333;
+}
+
+h1 {
+	font-family: 'SF Pro Display', san-serif;
+	font-size: 24px;
+	font-style: normal;
+	font-weight: 500;
+	line-height: 29px;
+	letter-spacing: 0em;
+	text-align: left;
+	display: inline-block;
+	position: absolute;
+    margin-top: 22px;
+    margin-left: 12px;
+}
+
+#titleimage {
+	width: 36px;
+    margin: 19px -7px 19px 18px;
+}
+
+iframe {
+	display: block;
+	position: absolute;
+	height: 100%;
+	width: 85%;
+	right: 0;
+}
+
+#topnav {
+	height: 100%;
+	width: 15%;
+	display: block;
+	position: fixed;
+	z-index: 5;
+	background: white;
+	color: #333;
+	font-family: 'SF Pro Text', san-serif;
+	font-size: 18px;
+	line-height: 19px;
+	min-width: 250px;
+}
+
+#links, #title {
+	border-bottom: 1px #DBDCE0 solid;
+}
+
+#links, #githubsection {
+	font-weight: 300;
+}
+
+#links img, #githubsection img {
+	width: 18px;
+	margin-right: 8px;
+	text-align: center
+}
+
+ul {
+	list-style-type: none; /* Remove bullets */
+	padding-left: 24px;
+}
+
+li {
+	margin-top: 24px;
+	margin-bottom: 24px;
+}
+
+li img {
+	margin-bottom: -2px;
+}
+
+li a {
+	margin-top: -4px;
+}
+
+#newLocation {
+	color: #0079C0;
+	font-weight: 500;
+}
+
+#newLocation:hover {
+	cursor: pointer;
+}
+
+#githubsection img {
+	margin-left: 24px;
+}
+
+#githubsection {
+	margin-top: 18px;
+}

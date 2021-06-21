@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+  <html lang="EN">
+  <head>
+    <title>Beautiful Google Street View</title>
+    <!--Matt Welter-->
+
+    <!--
+    
+          ______ ______
+        _/      Y      \_
+       // ~~ ~~ | ~~ ~  \\
+      // ~ ~ ~~ | ~~~ ~~ \\      Easter Egg 1/2 found
+     //________.|.________\\     by Matt Welter
+    `----------`-'----------'
+
+
+    -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="styles.css" rel="stylesheet">
+    <link href="favicon.png" rel="shortcut icon">
+    <meta name="description" content="Submit and find beautiful locations on our Earth">
+  </head>
+  <script type="text/javascript">
+    var imageURLs = [
+        "https://www.google.com/maps/embed?pb=!4v1592939863730!6m8!1m7!1sCAoSLEFGMVFpcE4wc1FnbG5qX1Zmb21hMzdpdV90US0wVHRURERIUmI5VmJSa0RJ!2m2!1d49.156116306504!2d20.156892453018!3f317.16343977131737!4f0.610048803099744!5f0.7820865974627469",
+        "https://www.google.com/maps/embed?pb=!4v1624224407956!6m8!1m7!1sCAoSLEFGMVFpcE1YdldOMFR5NkxwUVV6dlgwQWlRd1FIeXlnNzBSMUxuYWJ3Y3g5!2m2!1d-54.78199710000001!2d-66.8658635!3f335.61941859953345!4f4.760296766207631!5f0.4000000000000002",
+        "https://www.google.com/maps/embed?pb=!4v1624224451628!6m8!1m7!1sCAoSLEFGMVFpcE9Ud2Z5MTRDODA4RHNMejh1N2RueS1ReTVnV1RxRUJXb2FPRGc3!2m2!1d-52.18581440000001!2d-58.8390296!3f144.82344827586206!4f-23.388647214854117!5f0.4000000000000002",
+        "https://www.google.com/maps/embed?pb=!4v1624224570378!6m8!1m7!1sCAoSLEFGMVFpcE5RemhOU0xUTU5Rb3VncGNSdXJWRjFiSHRkN25Xdy1uWDlBcU96!2m2!1d-51.0349139!2d-61.229535!3f203.2!4f-13.36!5f0.7820865974627469",
+        "https://www.google.com/maps/embed?pb=!4v1624224617888!6m8!1m7!1sCAoSLEFGMVFpcE5Kd0o3TjI5ek1RUGYzdFF5WWh3LWUzYU5BQkdsNmR5TzVsay1F!2m2!1d16.16608376881856!2d-61.78830791887822!3f193.7620405599233!4f9.096731956784524!5f0.4000000000000002",
+        "https://www.google.com/maps/embed?pb=!4v1624224651606!6m8!1m7!1sCAoSLEFGMVFpcE8yMTVGQ1V3cTdwdlFmNEdQRjVWUmM1VU4yalJhMW52UVg5N2hF!2m2!1d-19.0576964!2d-69.2532511!3f157.97862004622866!4f-5.032256943422567!5f0.4000000000000002",
+        "https://www.google.com/maps/embed?pb=!4v1624224690432!6m8!1m7!1sCAoSLEFGMVFpcE9qLUZpaGZYSDRYazU4TVJ6c0dQRTJrOGpHTmhwOGlGZXNSVm9o!2m2!1d-13.021928!2d-58.2874852!3f272.77981388103274!4f0.21243610503974253!5f0.7820865974627469",
+        "https://www.google.com/maps/embed?pb=!4v1624224777776!6m8!1m7!1sCAoSLEFGMVFpcE5PRXlQVzlmNGdLMEhQdmVfWmpJYlo0YWhtSW9UVlR0U2pQRWpk!2m2!1d34.7917644!2d75.0779057!3f43.72269145687226!4f0.22034477746288417!5f0.4000000000000002",
+        "https://www.google.com/maps/embed?pb=!4v1624224804271!6m8!1m7!1sCAoSLEFGMVFpcE83RGdWZmJ3T1B3OXV4cHRleHhvQ1pvZGFqLW54dUxPeU84bHZR!2m2!1d33.95703543878986!2d78.43200430274739!3f296.97!4f3.6200000000000045!5f0.7172741685533417",
+        "https://www.google.com/maps/embed?pb=!4v1624224831601!6m8!1m7!1sCAoSLEFGMVFpcE1KRV9kbEJ0b1B0WEJWaHNrU2c3ZDhob3JrWEo0aFZjamtCdHlF!2m2!1d35.3735632!2d72.3444708!3f311.71589986177975!4f1.9186155267308322!5f0.4000000000000002",
+        "https://www.google.com/maps/embed?pb=!4v1624224977030!6m8!1m7!1sCAoSLEFGMVFpcE1SSklGYWV1c2R1aV9NQ1c5Q1c4SVZ6U1k4Q0NuaWswYUZwOGdU!2m2!1d43.05055600000001!2d76.985!3f121.76!4f-0.9500000000000028!5f0.7820865974627469",
+        "https://www.google.com/maps/embed?pb=!4v1624225236398!6m8!1m7!1smD4ThA4SthLifTAdt0lb4A!2m2!1d-13.16507087148874!2d-72.54471536812306!3f353.61!4f-6.969999999999999!5f0.7820865974627469",
+        "https://www.google.com/maps/embed?pb=!4v1624225285713!6m8!1m7!1sFCwE2-tyrRO8k3b-AIKSzg!2m2!1d51.69312074344851!2d-0.4196777429447138!3f186.12380975586777!4f-3.547389238140667!5f0.4000000000000002",
+        "https://www.google.com/maps/embed?pb=!4v1624225434804!6m8!1m7!1sCWskcsTEZBNXaD8gG-zATA!2m2!1d-23.4428043!2d151.9066925!3f85.7275910302996!4f-1.0174703135164407!5f0.4000000000000002",
+        "https://www.google.com/maps/embed?pb=!4v1624225579852!6m8!1m7!1sCAoSLEFGMVFpcE93Qk9QdFlub1NXSGxtOU1BT0JuR2NPNC0tNmxVMVRvdHRoelBq!2m2!1d27.9986346!2d86.84874330000001!3f44.205464517465415!4f-3.350701708310396!5f0.7820865974627469",
+        "https://www.google.com/maps/embed?pb=!4v1624225775342!6m8!1m7!1sCAoSLEFGMVFpcFAwY1FNZGY4azNpbnpsRG1Qa2tqQmhLd25SazFiNDhTekNMTk8x!2m2!1d37.7307967!2d-119.6384291!3f322.84510074298925!4f-15.248781448097034!5f0.7839870691480155",
+        "https://www.google.com/maps/embed?pb=!4v1624225850258!6m8!1m7!1sgskNYa2g8_sAAAQqZe0Ggw!2m2!1d37.7300293620943!2d-119.6363923694027!3f215.30221559509584!4f-89!5f0.4103123478686686",
+        "https://www.google.com/maps/embed?pb=!4v1624225874553!6m8!1m7!1sBocmr5QwQpVeFeE58jlKKQ!2m2!1d-85.0000101449527!2d-54.15079827665392!3f181.36742313588786!4f-4.4869893670428525!5f0.4000000000000002",
+        "https://www.google.com/maps/embed?pb=!4v1624225924383!6m8!1m7!1sCAoSLEFGMVFpcE8zeDJKRFpfMmZPTHlSS0puWVFvNzNUalAzQ0RQQUdRcHZOZmc1!2m2!1d78.5328918!2d16.0287835!3f34.582917511226356!4f10.344022506332081!5f0.4000000000000002",
+        "https://www.google.com/maps/embed?pb=!4v1624225944014!6m8!1m7!1sCAoSLEFGMVFpcE4xaDIwWFhCRXF3X3l6cWRDZGc5ZWR5Qm0xQW1rcGg2dUxVV2xR!2m2!1d68.2535477!2d-43.2870483!3f111.71790725116873!4f4.518835408158907!5f0.4000000000000002",
+        "https://www.google.com/maps/embed?pb=!4v1624225970562!6m8!1m7!1sCAoSLEFGMVFpcE1GUmd5N0ppMVRSZHk1RHA3THk0czI5SHZWVHVBRVd5TzczcktE!2m2!1d-56.6509138!2d113.256764!3f7.311470048076217!4f4.2994587103473805!5f0.4000000000000002",
+        "https://www.google.com/maps/embed?pb=!4v1624226007922!6m8!1m7!1sCAoSLEFGMVFpcE5MNmtiWDNrS2h5VnZVQmRaUnpFTVNBMjdLamRoVk52MzV6RnIx!2m2!1d16.4096219!2d-91.296408!3f230.1907932898997!4f1.012069447383226!5f0.4000000000000002",
+        "https://www.google.com/maps/embed?pb=!4v1624226049726!6m8!1m7!1sCAoSLEFGMVFpcFB5QUNwdUozOTNaVFB1bG1RWFp0SE5GRzIxU00xM2xNNGpseHp5!2m2!1d32.30646226506811!2d77.58175299930014!3f42.39163692852819!4f0.6355858658538551!5f0.4000000000000002",
+        "https://www.google.com/maps/embed?pb=!4v1624226084661!6m8!1m7!1sCAoSLEFGMVFpcE1ZU0pQY1dPWUdUNV81UkgzaTd1cEhhYjN2SFpBeUdUOVhZcmtt!2m2!1d29.30527769999999!2d102.9558262!3f98.4939641421424!4f0.010496035487093991!5f0.4000000000000002",
+        "https://www.google.com/maps/embed?pb=!4v1624226113404!6m8!1m7!1sCAoSLEFGMVFpcE1LTXZpaTZxWFVqZWlfUjBjTFhaRGk5bkFqMldyNDRKckhjbmtR!2m2!1d-54.01727343310741!2d-38.05298163666913!3f52.68450884796194!4f-12.178984710156953!5f0.4000000000000002",
+        "https://www.google.com/maps/embed?pb=!4v1624226138206!6m8!1m7!1sCAoSLEFGMVFpcE1PbGxnamxWSkxmUVBDeVhDNGY1X0FuV2Y3NHdpOWdKMFNHM1dP!2m2!1d-54.8413573211301!2d-36.01889086248786!3f240.11!4f-0.46999999999999886!5f0.7820865974627469",
+        "https://www.google.com/maps/embed?pb=!4v1624226204300!6m8!1m7!1sCAoSLEFGMVFpcE5oTXZYLWFPQWkzTnR2UG5QendVMXhoYml0ck1qX0thaUpFWU0z!2m2!1d-13.7729775!2d-172.2853929!3f184.11364507599632!4f1.590379732995558!5f0.4000000000000002",
+        "https://www.google.com/maps/embed?pb=!4v1624226237825!6m8!1m7!1sCAoSLEFGMVFpcE1UTXpjQTFIUWV2Nmk1YVlqRDl5LWFYNE1jcWFyY0Vod1Z3a0Iz!2m2!1d-17.111286!2d179.094329!3f218.5249845507607!4f-2.6640413449308937!5f0.7820865974627469",
+        "https://www.google.com/maps/embed?pb=!4v1624226267752!6m8!1m7!1sCAoSLEFGMVFpcFBKaFZFdmNSTUhSZ0o2TjdhNmoxQTlxSEozeHF6emdzSi12RGY4!2m2!1d-16.75975419169317!2d-179.7944749711493!3f281.84185595910424!4f3.3300244463980135!5f0.7820865974627469",
+        "https://www.google.com/maps/embed?pb=!4v1624226332421!6m8!1m7!1sCAoSLEFGMVFpcE9PZWk4cWFMTEZfdDhxbXA3LUdXRm9BZ2h1ZG5uZlhKcVkwdVlY!2m2!1d27.40977076511198!2d128.6737528815866!3f142.50801309074706!4f3.9083843074296!5f0.4000000000000002",
+        "https://www.google.com/maps/embed?pb=!4v1624226367712!6m8!1m7!1sCAoSLEFGMVFpcE5MLWJtQkxxOTR2eXo0RWdwUk5IVjdwamhCei0wWTNDVTE5bjFO!2m2!1d-54.43872680951214!2d-36.17390166447439!3f192.56693442289242!4f-15.171695183867328!5f0.4000000000000002",
+        "https://www.google.com/maps/embed?pb=!4v1624226409848!6m8!1m7!1sCAoSLEFGMVFpcE4wbUFLR091and3eTUzWlByV05nSmhHZUp5ZVlqa0xUVmtsMDlJ!2m2!1d-66.2786459!2d-65.2506009!3f49.48943113356415!4f-16.11051653125878!5f0.4000000000000002",
+        "https://www.google.com/maps/embed?pb=!4v1624226448875!6m8!1m7!1sCAoSLEFGMVFpcE9PMGlmcjEwclluY2ZXcVVKR0NKUHBuM0Y3MW1kM1p3SjAyNUsx!2m2!1d-11.73746949359235!2d143.9729863252934!3f88.8139535640609!4f-79.56167417985473!5f0.7820865974627469",
+      ];
+
+    function getImageTag() {
+        var img = '<iframe src=\"';
+        var randomIndex = Math.floor(Math.random() * imageURLs.length);
+        img += imageURLs[randomIndex];
+        img += '\" alt=\"Some alt text\"/>';
+        return img;
+      }
+  </script>
+  <body>
+    <div id="topnav">
+      <section id="title">
+        <img id="titleimage" src="media/streetview.png">
+        <h1>Street View</h1>
+      </section>
+      <section id="links">
+        <ul>
+          <li><a id="newLocation" onclick="window.location.reload();"><img src="media/random.png">Random location</a></li>
+          <li><a href="https://docs.google.com/spreadsheets/d/1SFYeQ6-uFOz-9nvyGYenzBO32cIiu1rH4Kf3_LW2Wf8/" target="_blank"><img id="locationimage" src="media/locations.png">All locations</a></li>
+          <li><a href="mailto:welter.m@icloud.com?subject=[ISSUE] Street View App"><img src="media/issue.png">Report issue</a></li> <!--  mailto:welter.m@icloud.com with subject line  -->
+        </ul>
+      </section>
+      <section id="githubsection">
+        <img src="media/github.png">
+        <a>GitHub Repo</a>
+      </section>
+    </div>
+    <script type="text/javascript">
+      document.write(getImageTag());
+    </script>
+  </body>
+</html>
