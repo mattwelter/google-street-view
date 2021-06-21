@@ -14,7 +14,7 @@ a, a:visited {
 }
 
 h1 {
-	font-family: 'SF Pro Display', san-serif;
+	font-family: 'SF Pro Display', 'Helvetica', 'Arial', san-serif;
 	font-size: 24px;
 	font-style: normal;
 	font-weight: 500;
@@ -50,7 +50,7 @@ iframe {
 	z-index: 5;
 	background: white;
 	color: #333;
-	font-family: 'SF Pro Text', san-serif;
+	font-family: 'SF Pro Text', 'Helvetica', 'Arial', san-serif;
 	font-size: 18px;
 	line-height: 19px;
 	min-width: 250px;
@@ -105,4 +105,7 @@ li a {
 
 #githubsection {
 	margin-top: 18px;
+}
+
+@media screen and (max-width: 340px) {
 }
