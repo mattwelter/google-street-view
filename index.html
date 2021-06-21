@@ -65,12 +65,26 @@
         img += '\" alt=\"Some alt text\"/>';
         return img;
       }
+
   </script>
   <body>
     <div id="topnav">
       <section id="title">
         <img id="titleimage" src="media/streetview.png">
         <h1>Street View</h1>
+        <div class="dropdown">
+          <img src="media/menu.png" id="menu" onclick="myFunction()" class="dropbtn">
+          <div id="myDropdown" class="dropdown-content">
+            <section id="linksmobile">
+              <ul>
+                <li><a id="newLocation" onclick="window.location.reload();"><img src="media/random.png">Random location</a></li>
+                <li><a href="https://docs.google.com/spreadsheets/d/1SFYeQ6-uFOz-9nvyGYenzBO32cIiu1rH4Kf3_LW2Wf8/" target="_blank"><img id="locationimage" src="media/locations.png">All locations</a></li>
+                <li><a href="mailto:welter.m@icloud.com?subject=[SUBMISSION] Street View App"><img src="media/send.png">Submit location</a></li>
+                <li><a href="mailto:welter.m@icloud.com?subject=[ISSUE] Street View App"><img src="media/issue.png">Report issue</a></li>
+              </ul>
+            </section>
+          </div>
+        </div>
       </section>
       <section id="links">
         <ul>
@@ -82,11 +96,32 @@
       </section>
       <section id="githubsection">
         <img src="media/github.png">
-        <a>GitHub Repo</a>
+        <a href="https://github.com/mattwelter/google-street-view" target="_blank">GitHub Repo</a>
       </section>
     </div>
+
     <script type="text/javascript">
       document.write(getImageTag());
+
+      /* When the user clicks on the button, 
+      toggle between hiding and showing the dropdown content */
+      function myFunction() {
+        document.getElementById("myDropdown").classList.toggle("show");
+      }
+
+      // Close the dropdown if the user clicks outside of it
+      window.onclick = function(event) {
+        if (!event.target.matches('.dropbtn')) {
+          var dropdowns = document.getElementsByClassName("dropdown-content");
+          var i;
+          for (i = 0; i < dropdowns.length; i++) {
+            var openDropdown = dropdowns[i];
+            if (openDropdown.classList.contains('show')) {
+              openDropdown.classList.remove('show');
+            }
+          }
+        }
+      }
     </script>
   </body>
 </html>

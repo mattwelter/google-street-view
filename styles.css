@@ -72,6 +72,11 @@ iframe {
 	text-align: center
 }
 
+#linksmobile img {
+	margin-left: -24px;
+    margin-right: 8px;
+}
+
 ul {
 	list-style-type: none; /* Remove bullets */
 	padding-left: 24px;
@@ -107,5 +112,89 @@ li a {
 	margin-top: 18px;
 }
 
-@media screen and (max-width: 340px) {
+#githubsectionmobile {
+	margin-top: 18px;
+}
+
+/* Mobile dropdown, etc */
+
+.dropbtn {
+  color: white;
+  padding: 16px;
+  font-size: 16px;
+  border: none;
+  cursor: pointer;
+}
+
+.dropbtn:hover, .dropbtn:focus {
+  opacity: .6;
+}
+
+.dropdown {
+  position: relative;
+  display: none;
+  float: right;
+}
+
+.dropdown #menu {
+	height: 54px;
+	margin-top: 5px;
+}
+
+.dropdown img {
+	height: 22px;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f1f1f1;
+  min-width: 160px;
+  overflow: auto;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+  margin-left: -162px;
+  width: 218px;
+}
+
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+.dropdown a:hover {
+	background-color: #ddd;
+}
+
+.show {
+	display: block;
+}
+
+@media screen and (max-width: 500px) {
+	#linksmobile #titleimage {
+		margin: 17px -9px 19px 16px;
+	}
+	h1 {
+		font-size: 18px;
+		margin-top: 18px;
+	}
+	#title {
+		border-bottom: none;
+	}
+	#titleimage {
+		width: 28px;
+	    margin: 19px -7px 19px 18px;
+	}
+	#topnav {
+		height: 68px;
+		width: 100%;
+	}
+	.dropdown {
+	  display: inline-block;
+	}
+	#links, #githubsection {
+		display: none;
+	}
 }
