@@ -5,6 +5,7 @@
 body {
 	margin: 0 auto;
 	display: block;
+	max-width:;
 }
 
 a, a:visited {
@@ -37,6 +38,8 @@ iframe {
 	height: 100%;
 	width: 85%;
 	right: 0;
+	min-width: 500px;
+	float: right;
 }
 
 #topnav {
@@ -51,6 +54,8 @@ iframe {
 	font-size: 18px;
 	line-height: 19px;
 	min-width: 250px;
+	float: left;
+	left: 0;
 }
 
 #links, #title {
