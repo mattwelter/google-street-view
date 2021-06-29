@@ -116,6 +116,11 @@ li a {
 	margin-top: 18px;
 }
 
+#notavailable:hover {
+	text-decoration: line-through;
+	opacity: 0.5;
+}
+
 /* Mobile dropdown, etc */
 
 .dropbtn {
